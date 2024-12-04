@@ -42,14 +42,14 @@ body {
     white-space: nowrap ;
     font-size: 1.3rem;
   }
-  header H1{
+  header H2{
     position: absolute;
     top: 100px;
     left: 170px;
     font-optical-sizing: auto;
     font-weight: 400;
     font-size: 1.2rem;
-
+  }
   header a{
     color: #ee2b2b;
     text-decoration: none;
