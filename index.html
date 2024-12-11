@@ -1,41 +1,145 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>首頁</title>
-    <link rel="stylesheet" href="style.css">
+    <title>綠崗麵包工坊 - GreenHill Bakery</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.15/dist/css/uikit.min.css" />
 </head>
 <body>
-    <header>
-    <H1> <a href="index.html">Green Hill Backery</a></H1>
-    <H2>綠崗麵包坊</H2>
-    <nav>
-    <ul>
-        <li><a href="index.html">首頁</a></li>
-        <li><a href=products.html>產品</a></li>
-        <li><a href="about.html">綠崗麵包訪</a></li>
-        <li><a href="contact.html">營業資訊</a></li>
-    </ul>
-    </nav>
+    <header class="uk-background-muted uk-padding-small">
+        <div class="uk-container uk-flex uk-flex-middle uk-flex-between">
+            <!-- Logo and Site Names -->
+            <div class="uk-flex uk-flex-middle">
+                <img src="images/logo.png" alt="綠崗麵包工坊 Logo" width="50" height="50" class="uk-margin-right">
+                <div>
+                    <h1 class="uk-h4 uk-margin-remove">綠崗麵包工坊</h1>
+                    <p class="uk-margin-remove">GreenHill Bakery</p>
+                </div>
+            </div>
+
+            <!-- Responsive Navigation Menu -->
+            <nav>
+                <ul class="uk-navbar-nav uk-visible@m">
+                    <li><a href="#">首頁</a></li>
+                    <li><a href="#">產品</a></li>
+                    <li><a href="#">關於我們</a></li>
+                    <li><a href="#">聯絡我們</a></li>
+                </ul>
+                <div class="uk-hidden@m">
+                    <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-menu">選單</button>
+                </div>
+            </nav>
+        </div>
     </header>
-    <main>
-    <H2>味蕾的詩篇</H2>
-    <blockquote>"以咖啡香為詩，麵包為韻，譜寫屬於你的味蕾詩篇。"</blockquote>
-    <p style="width:80%;text-align: center;">
-    <img src="images/greenhouse.png" width="40%" style="float: left;margin-right: 30px;">
-   在喧囂城市的一角，綠崗麵包工坊像是一座孤島，<br>
-   靜靜地訴說著關於麵粉、酵母和時間的故事。<br>
-   透過落地窗，陽光灑落在揉麵台上，烘焙師的手在麵糰上輕柔地舞動，<br>
-   就像一位藝術家在創作，每一塊麵包都是一幅獨一無二的畫作。<br>
-   推開綠崗麵包工坊的門，空氣中散發出家的味道。溫暖的燈光、<br>
-   木質的桌椅，佐以麵包與咖啡濃郁的香氣，<br>
-    都讓人感到無比的舒適。坐在窗邊，看著街上的行人匆匆忙忙，<br>
-    而自己卻能靜靜地享受著一杯咖啡和一份手工麵包，那種寧靜的幸福感讓人難以言喻。<br>
-    </p>
-    </main>
-    <footer>
-        <p>Copyright &copy; 2024 綠崗烘焙坊 All Rights Reserved</p>
+
+    <!-- Offcanvas Menu for Mobile -->
+    <div id="offcanvas-menu" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <ul class="uk-nav uk-nav-default">
+                <li><a href="#">首頁</a></li>
+                <li><a href="#">產品</a></li>
+                <li><a href="#">關於我們</a></li>
+                <li><a href="#">聯絡我們</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section class="uk-section uk-section-muted">
+        <div class="uk-container">
+            <h2 class="uk-heading-line uk-text-center"><span>在地就是新鮮</span></h2>
+            <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3 class="uk-card-title">新鮮</h3>
+                        <p>為什麼要選擇從外地工廠運來的冷凍麵包？我們希望讓大家重新認識在地製作產品的新鮮價值，將目光拉回彰化市區的驕傲。透過與在地農場合作，我們致力於盡可能從周邊地區採購食材。</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3 class="uk-card-title">在地</h3>
+                        <p>身為彰化市的一家麵包店，我們堅信，一切的開始來自優質的原料，並投入時間去精心打磨每一件作品。從麵包到咖啡，我們的每一項產品都以耐心與細緻手工打造。每天清晨，我們的烘焙師與糕點師傅都從零開始，手工調製與烘焙，只為確保您享用到最為新鮮的美味。</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3 class="uk-card-title">在地化</h3>
+                        <p>在一個追求便利與速度的行業中，我們選擇了截然不同的道路。我們拒絕使用解凍即食的鬆餅或半熟烘焙的麵包，而是堅持在每一件烘焙產品售出前，從零開始手工製作。這並不容易，也讓我們付出了更高的成本，但對我們而言，這是唯一值得的方式。這就是我們對品質的承諾！</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Environment Section -->
+    <section class="uk-section">
+        <div class="uk-container">
+            <h2 class="uk-heading-line uk-text-center"><span>綠崗上的美味</span></h2>
+            <div class="uk-grid uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                <div>
+                    <img src="images/greenhouse.png" alt="店面照片" class="uk-width-1-1">
+                </div>
+                <div>
+                    <p>綠崗麵包工坊的店面設計融合自然與現代，為您提供一個溫馨舒適的用餐環境。我們的麵包由最新鮮的食材製作，每一口都散發著濃厚的在地風味。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommended Products Section -->
+    <section class="uk-section uk-section-muted">
+        <div class="uk-container">
+            <h2 class="uk-heading-line uk-text-center"><span>店長溫馨推薦</span></h2>
+            <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center" uk-grid>
+                <div>
+                    <img src="images/toast.webp" alt="商品1" class="uk-border-circle" width="150" height="150">
+                    <h3 class="uk-card-title">招牌牛奶麵包</h3>
+                    <p>香濃奶香，入口即化，老少皆宜的經典選擇。</p>
+                </div>
+                <div>
+                    <img src="images/tuna.webp" alt="商品2" class="uk-border-circle" width="150" height="150">
+                    <h3 class="uk-card-title">巧克力可頌</h3>
+                    <p>酥脆外皮搭配濃郁巧克力內餡，甜而不膩的享受。</p>
+                </div>
+                <div>
+                    <img src="images/wheat.webp" alt="商品3" class="uk-border-circle" width="150" height="150">
+                    <h3 class="uk-card-title">健康雜糧麵包</h3>
+                    <p>富含纖維與營養，讓健康與美味兼得。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="uk-section uk-section-small uk-background-muted">
+        <div class="uk-container">
+            <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-4@s" uk-grid>
+                <div>
+                    <h4>關於我們</h4>
+                    <p>了解更多關於綠崗麵包工坊的故事與使命。</p>
+                </div>
+                <div>
+                    <h4>聯絡資訊</h4>
+                    <p>地址：123 綠崗街<br>電話：123-456-789</p>
+                </div>
+                <div>
+                    <h4>社群媒體</h4>
+                    <ul class="uk-list">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>營業時間</h4>
+                    <p>週一至週五：8:00 - 18:00<br>週六、週日：9:00 - 17:00</p>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.15/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.15/dist/js/uikit-icons.min.js"></script>
 </body>
 </html>
