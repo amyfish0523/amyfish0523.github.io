@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P34G83QVH8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P34G83QVH8');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>綠崗麵包工坊</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.16/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.16/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.16/dist/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="uikit.css" />
+</head>
+<body>
+    <header class="uk-background-muted uk-padding-small">
+        <div class="uk-container uk-flex uk-flex-middle uk-flex-between">
+            <!-- Logo 和網站名稱 -->
+            <div class="uk-flex uk-flex-middle">
+                <img src="https://via.placeholder.com/80" alt="網站 Logo" class="uk-margin-small-right">
+                <div>
+                    <h1 class="uk-margin-remove uk-text-bold uk-text-primary" style="font-size: 24px;">綠崗麵包工坊</h1>
+                    <p class="uk-margin-remove uk-text-meta" style="font-size: 20px; border-bottom: #c3b0b0 1px solid;">GreenHill Bakery</p>
+                </div>
+            </div>
+            <!-- RWD 選單 -->
+            <nav>
+                <!-- 漢堡選單（行動版 960px 以上隱藏，uk-nav：直式選單） -->
+                <div class="uk-hidden@m">
+                    <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-nav">
+                        <span uk-navbar-toggle-icon></span>
+                    </button>
+                    <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+                        <div class="uk-offcanvas-bar">
+                            <button class="uk-offcanvas-close" type="button" uk-close></button>
+                            <ul class="uk-nav">
+                                <li><a href="#">首頁</a></li>
+                                <li><a href="#">關於我們</a></li>
+                                <li><a href="#">產品列表</a></li>
+                                <li><a href="#">聯絡我們</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 電腦版選單（960px 以上顯示，uk-navbar-nav：橫式選單） -->
+                <ul class="uk-navbar-nav uk-visible@m">
+                    <li><a href="#">首頁</a></li>
+                    <li><a href="#">關於我們</a></li>
+                    <li><a href="#">產品列表</a></li>
+                    <li><a href="#">聯絡我們</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<!-- 簡易圖片置左 -->
+<section class="uk-section uk-section-default">
+    <div class="uk-container">
+        <img class="uk-align-left uk-margin-remove-adjacent uk-border-rounded" src="images/greenhouse.png" width="225" alt="Example image">
+        <h3>💡 人氣必點推薦：</h3>
+        <ul  class="uk-list" >
+            <li>🍴 雞腿排蛋三明治：肉質鮮嫩，層次豐富，每口都是幸福的滋味！</li>
+            <li>🍴 海鹽牛五花三明治：美國進口牛肉，鹽香四溢，肉食愛好者的最愛。</li>
+            <li>🍴 泡菜牛五花三明治：韓風泡菜遇上牛五花，酸辣鮮香，一口開啟味覺新世界！</li>
+        </ul>
+        <p>來綠崗早午餐，品味不一樣的早晨，讓心與胃都飽足幸福！</p>
+    </div>
+</section>
+
+<!-- 簡易圖片置右 -->
+<section class="uk-section uk-section-default">
+    <div class="uk-container">
+        <div class="uk-panel">
+            <img class="uk-align-right uk-margin-remove-adjacent uk-border-rounded" src="images/greenhouse.png" width="225" alt="Example image">
+            <h3>💡 人氣必點推薦：</h3>
+            <ul  class="uk-list" >
+                <li>🍴 雞腿排蛋三明治：肉質鮮嫩，層次豐富，每口都是幸福的滋味！</li>
+                <li>🍴 海鹽牛五花三明治：美國進口牛肉，鹽香四溢，肉食愛好者的最愛。</li>
+                <li>🍴 泡菜牛五花三明治：韓風泡菜遇上牛五花，酸辣鮮香，一口開啟味覺新世界！</li>
+            </ul>
+            <p>來綠崗早午餐，品味不一樣的早晨，讓心與胃都飽足幸福！</p>
+        </div>
+    </div>
+</section>
+
+        <!-- 區段：特色說明 -->
+        <section class="uk-section uk-section-default">
+            <div class="uk-container">
+                <h2 class="uk-heading-line uk-text-center"><span>在地就是新鮮</span></h2>
+                <div class="uk-grid-match uk-child-width-1-3@m uk-text-center" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <h3 class="uk-card-title">當日新鮮烘焙</h3>
+                            <p>我們的每一份麵包皆為每日新鮮烘焙，保證最佳品質。</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <h3 class="uk-card-title">嚴選在地食材</h3>
+                            <p>採用本地農夫提供的食材，展現真材實料的好味道。</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <h3 class="uk-card-title">匠心工藝</h3>
+                            <p>我們的麵包師傅以專業手法打造每一份美味。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <!-- 區段：店面環境介紹 -->
+    <section class="uk-section uk-section-muted">
+        <div class="uk-container">
+            <h2 class="uk-heading-line uk-text-center"><span>綠崗上的美味</span></h2>
+            <div class="uk-grid-match uk-child-width-1-2@m uk-flex-middle" uk-grid>
+                <!-- 第一欄：店面照片 -->
+                <div>
+                    <img src="https://via.placeholder.com/600x400" alt="店面照片" class="uk-border-rounded">
+                </div>
+                <!-- 第二欄：說明文案 -->
+                <div>
+                    <h3 class="uk-text-bold">溫馨的氛圍</h3>
+                    <p>綠崗麵包工坊以簡約而溫馨的裝潢風格，為每一位顧客帶來舒適的購物體驗。店內滿溢著剛出爐麵包的香氣，讓人忍不住駐足欣賞。</p>
+                    <h3 class="uk-text-bold">與自然為伴</h3>
+                    <p>我們的店面座落於風景秀麗的綠崗，窗外便是青山與綠地。我們希望每位光臨的顧客，都能在享受美食的同時感受到大自然的和諧。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- 店長溫馨推薦 -->
+        <section class="uk-section uk-section-default">
+            <div class="uk-container">
+                <h2 class="uk-heading-line uk-text-center"><span>店長溫馨推薦</span></h2>
+                <div class="uk-grid-match uk-child-width-1-3@m uk-text-center" uk-grid>
+                    <!-- 第一項商品 -->
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <img src="https://via.placeholder.com/150" alt="商品圖片" class="uk-border-circle">
+                            <h3 class="uk-card-title">招牌牛奶吐司</h3>
+                            <p>選用頂級北海道牛奶，每一口都是濃濃的幸福滋味。</p>
+                        </div>
+                    </div>
+                    <!-- 第二項商品 -->
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <img src="https://via.placeholder.com/150" alt="商品圖片" class="uk-border-circle">
+                            <h3 class="uk-card-title">香草可頌</h3>
+                            <p>採用純天然香草，搭配酥脆層次分明的麵皮，讓人無法抗拒。</p>
+                        </div>
+                    </div>
+                    <!-- 第三項商品 -->
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <img src="https://via.placeholder.com/150" alt="商品圖片" class="uk-border-circle">
+                            <h3 class="uk-card-title">巧克力磅蛋糕</h3>
+                            <p>以濃郁巧克力製成，每一口都是濃縮的甜蜜回憶。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 影片區段 -->
+        <section class="uk-section uk-section-muted">
+            <div class="uk-container">
+                <h2 class="uk-heading-line uk-text-center"><span>社群上的美味</span></h2>
+                <div class="uk-grid-match uk-child-width-1-2@m uk-flex-middle" uk-grid>
+                    <!-- Youbute影片 -->
+                    <div>
+                        <h3 class="uk-card-title">Youbute影片</h3>
+                        <div class="uk-cover-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/QfQhCaTib4c?si=8YDer5KlSL5-am4a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Facebook分享 -->
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <h3 class="uk-card-title">Facebook分享</h3>
+                            <div class="uk-cover-container">
+                                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjacky.wu.9469545%2Fposts%2Fpfbid02UV4wFLb3b8wFoqBMRnoVHTaiUDQb8FCHsqJAoJLCfkfPR6EyzuLn7sG1LBA5r1uWl&show_text=true&width=500" width="500" height="729" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="uk-card-title">Twitter分享</h3>
+                        <div class="uk-cover-container">
+                            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">the smell of new books, rain, and coffee &gt;&gt;&gt; <a href="https://t.co/TQ3HftUxAM">pic.twitter.com/TQ3HftUxAM</a></p>&mdash; 🍂 Fall Aesthetic 🍂 (@fallaesthetic0) <a href="https://twitter.com/fallaesthetic0/status/1865389947693477961?ref_src=twsrc%5Etfw">December 7, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="uk-card-title">Google 地圖分享</h3>
+                        <div class="uk-cover-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d58291.641164453584!2d120.39159398736342!3d24.058289285890233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3469457ca67a898d%3A0x7879473b10661ddc!2zNTA15b2w5YyW57ij6bm_5riv6Y6u6Kaq5rCR6LevMTIx6Jmf!3m2!1d24.0582948!2d120.4327938!5e0!3m2!1szh-TW!2stw!4v1733928660919!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         
+
+        <!-- 頁尾區段 -->
+        <footer class="uk-section uk-section-secondary uk-light">
+            <div class="uk-container">
+                <div class="uk-grid-match uk-child-width-1-4@m" uk-grid>
+                    <!-- 第一欄：網站資訊 -->
+                    <div>
+                        <h4 class="uk-text-bold">關於我們</h4>
+                        <p>綠崗麵包工坊秉持在地新鮮的理念，用心製作每一份麵包。</p>
+                    </div>
+                    <!-- 第二欄：聯絡方式 -->
+                    <div>
+                        <h4 class="uk-text-bold">聯絡方式</h4>
+                        <ul class="uk-list">
+                            <li>地址：彰化縣綠崗路88號</li>
+                            <li>電話：04-12345678</li>
+                            <li>Email：info@greenhillbakery.tw</li>
+                        </ul>
+                    </div>
+                    <!-- 第三欄：快速連結 -->
+                    <div>
+                        <h4 class="uk-text-bold">快速連結</h4>
+                        <ul class="uk-list">
+                            <li><a href="#">首頁</a></li>
+                            <li><a href="#">關於我們</a></li>
+                            <li><a href="#">產品列表</a></li>
+                            <li><a href="#">聯絡我們</a></li>
+                        </ul>
+                    </div>
+                    <!-- 第四欄：社群媒體 -->
+                    <div>
+                        <h4 class="uk-text-bold">追蹤我們</h4>
+                        <div class="uk-flex uk-flex-middle">
+                            <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="facebook"></a>
+                            <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+                            <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
